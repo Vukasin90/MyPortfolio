@@ -13,3 +13,7 @@ courses:
 - {avatar: 'CodeSchool-small-logo.png', name: 'CodeSchool', title: 'A pluralsight company.', quote: '<p><strong>Pluralsight</strong> is a privately held online education company that offers a variety of video training courses for software developers, IT administrators, and creative professionals through its website.. Concept is similar to a Treehouse, only this one ofers a lot of free courses. Check it out <a href="https://www.codeschool.com/" target="_blank">here!</a></p>', logo: 'CodeSchool-logo.png'}
 
 
+seo:
+  description: 'Vukasin - Portfolio page. Front-end development. Jekyll, sass.'
+  rel-author: 'https://github.com/Vukasin90'
+  rel-publisher: 'https://github.com/Vukasin90'
