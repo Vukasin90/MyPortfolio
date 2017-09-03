@@ -1,0 +1,90 @@
+
+header
+    padding-bottom: 50px
+    background: url(../img/header5.jpeg) center center
+    background-size: cover
+
+    .logo
+        +size(50px)
+        float: left
+        margin: 10px 0 0 30px
+        cursor: pointer
+
+        path
+            fill: rgba(0,0,0,0.4)
+            &:hover 
+                fill: rgba(0,0,0,0.6)
+
+        svg  
+            +size(50px) 
+        
+    nav 
+        float: right
+        padding: 30px 30px 0 0
+        a
+            display: inline-block
+            margin-left: 20px
+            font-weight: 700
+            text-transform: uppercase
+            color: rgba(0,0,0,0.8)
+            text-decoration: none
+            text-shadow: 0px 0px 1px white
+            transition: all 0.3s ease-in-out
+            
+
+            &:hover
+                color: rgba(0,0,0,0.1)
+                transition: all 0.3s ease-in-out
+    h1
+        text-align: center
+        font:
+            size: 72px
+            weight: 700
+        color: white
+        text-transform: uppercase
+        letter-spacing: 0.05
+        margin-bottom: 20px
+        clear: both
+        padding-top: 100px
+        text-shadow: 2px 2px 2px black
+
+        span 
+            display: inline-block
+            padding: 0.2em 0.5em
+            border: white solid 10px
+            text-shadow: 1px 1px 2px black
+    .kicker
+        text-align: center
+        font:
+            weight: 700
+            family: 'Lato', sans-serif
+            size: 25px
+        text-transform: uppercase
+        letter-spacing: 0.07em
+        color: white
+        line-height: 1
+        text-shadow: 1px 1px 2px black
+
+@media (max-width: 640px)
+    header
+    
+        .logo
+            margin: 10px calc(50% - 25px)
+            svg  
+                +size(50px)
+
+        nav
+            float: none
+            text-align: center
+            padding-top: 90px
+            
+            a  
+                font-size: 10px
+                font-weight: 900
+
+        h1
+            padding-top: 0px
+
+        .kicker
+            font-size: 15px
+            text-shadow: 2px -1px 2px black

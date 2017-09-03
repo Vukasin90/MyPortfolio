@@ -1,0 +1,37 @@
+<section class="section-courses">
+
+    <h3 id="courses">Looking for a web developer career?<br> <br>Check these out!</h3>
+    <div class="courses-controls">
+        <div class="course-control-next">{% include icons/icon-next.html %}</div>
+        <div class="course-control-prev">{% include icons/icon-prev.html %}</div>
+        
+    </div>
+    <div class="courses-mobile-nav">
+    {% for course in site.data.settings.courses %}
+        <span></span>
+    {% endfor %}
+    </div>
+    <div class="course-belt">
+
+        {% for course in site.data.settings.courses %}
+        <div class="course-unit">
+            <div class="course-logo-small">
+                <img src="Assets/img/online-kursevi/{{ course.avatar }}" alt="course-logo">
+                <strong class="course-name">{{ course.name }}</strong>
+                <em class="course-title"> {{ course.title }}</em>
+            </div>
+            <div class="course-content">
+                    {{ course.quote }}
+            </div>
+        </div>
+
+        {% endfor %}
+    </div>
+
+    <div class="courses-logos">
+        {% for course in site.data.settings.courses %}
+        <div class="course-logo" style="background-image: url(Assets/img/online-kursevi/{{ course.logo }});"></div>
+        {% endfor %}
+    </div>
+
+</section>

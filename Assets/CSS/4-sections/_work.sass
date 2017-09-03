@@ -1,0 +1,146 @@
+.alt-section
+    background: $bgcolor
+.section-work
+    overflow-x: hidden
+
+.work-belt
+    width: 200%
+    position: relative
+    left: 0%
+    transition: all 0.5s
+    
+
+.thumb-wrap, .work-wrap
+    width: 50%
+    float: left
+
+.thumb-container
+    max-width: 960px
+    margin: 0 auto 
+    padding-bottom: 100px
+    +clearfix
+
+    .thumb-unit
+        display: block
+        width: 25%
+        float: left
+        position: relative
+        padding-top: 17%
+        overflow: hidden
+        cursor: pointer
+
+        @media screen and (max-width: 760px)
+            width: 50%
+            padding-top: 26%
+
+
+        background:
+            position: center center
+            repeat: no-repeat
+            size: cover
+
+        .thumb-overlay
+            +position(absolute, 100% 0px null 0px)
+            height: 100%
+            background: fade-out($accent-dark, 0.3)
+            text-align: center
+            display: flex
+            align-items: center
+            justify-content: center
+
+            strong
+                display: block
+                padding: 0 20px
+                color: white
+                font-weight: 300
+                text-transform: uppercase
+                font-size: 24px
+                line-height: 1.2
+
+        &:hover .thumb-overlay
+            +position(absolute, 0% 0px null 0px)
+            @extend %animations
+        
+.work-container
+    max-width: 600px
+    margin: 0 auto 
+    display: none
+
+    h4 
+        color: $accent-dark
+        font-weight: 300
+        text-transform: uppercase
+        font-size: 28px
+        line-height: 1.2
+        margin: 0 0 20px
+
+    img 
+        max-width: 100%
+        margin-bottom: 20px
+
+    .work-return
+        +size(40px)
+        cursor: pointer
+        opacity: 0.5
+        position: relative 
+        top: 37px 
+        left: -60px
+
+
+        path 
+            fill: rgba(0,0,0,0.4)
+
+        svg  
+            +size(40px) 
+
+        &:hover
+            opacity: 1 
+
+.live-preview
+    width: 100%
+    height: 50px
+    background-color: #cc0000 
+    color: white  
+    border: 1px solid #cc0000
+    margin: 30px 0
+    border-radius: 5px
+    box-shadow: 8px 5px 17px -2px grey
+    transition: 0.5s all
+    animation: button 1s ease-in-out loop
+
+    span
+        display: inline-block 
+        color: black
+        .icon-github
+            
+    
+
+    &:hover
+        box-shadow: 8px 7px 11px 1px gray
+        background-color: #ff0000
+
+    &:active
+        background-color: #cc0000
+
+
+    &:focus
+        outline: 0
+
+
+@media (max-width: 740px)
+    .work-container
+
+        .work-return
+            left: 0px
+
+        h4
+            margin-left: 60px
+        .project-load
+            padding: 5px
+
+@keyframes button
+    0%
+        background-color: #cc0000
+
+    100%
+        background-color: #ff0000 

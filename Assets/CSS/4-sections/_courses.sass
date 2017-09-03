@@ -1,0 +1,159 @@
+.section-courses
+    position: relative
+
+    #courses 
+        margin-bottom: 110px
+
+.course-belt
+    width: 100%
+    position: relative
+
+
+    .course-unit
+        max-width: 750px
+        margin: 0  -375px -375px
+        display: flex
+        position: absolute
+        top: 0px
+        left: 50%
+        display: none
+        @extend %animations
+        
+
+        &.active-course
+            display: flex 
+            
+
+        .course-logo-small
+            min-width: 300px
+            text-align: center
+
+            img
+                +size(100px)
+                max-width: 128px
+                border-radius: 50%
+
+            .course-name
+                display: block
+                text-transform: uppercase
+                font-weight: 400
+                letter-spacing: 1px
+
+            .course-title
+                font-style: normal
+                font-size: 12px
+                color: #999 
+
+        .course-content
+            font-size: 18px
+            line-height: 36px
+            font-weight: 300
+            margin-top: -10px
+
+
+.courses-logos
+    position: relative
+    max-width: 750px
+    margin: 500px auto 100px
+    display: flex
+    align-items: center 
+    justify-content: space-around
+
+    .course-logo
+        height: 80px
+        min-width: 200px
+        background-size: contain
+        background-position: center
+        background-repeat: no-repeat
+        cursor: pointer
+        margin: 0 20px
+        opacity: 0.5
+
+        &.active-course
+            border-bottom: 4px solid $accent-dark
+            opacity: 1
+.courses-controls
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    +size(100%)
+
+    > div
+        +size(40px)
+        margin-top: -20px
+
+    .course-control-next
+        position: absolute
+        top: 50%
+        right: 10px
+        cursor: pointer
+
+        svg  
+            +size(40px)
+
+    .course-control-prev
+        position: absolute
+        top: 50%
+        left: 10px
+        cursor: pointer
+
+        svg  
+            +size(40px)
+
+// Courses-mobile-nav
+.courses-mobile-nav
+    text-align: center
+    display: none
+    span
+        cursor: pointer
+        display: inline-block
+        +size(16px)
+        border-radius: 50%
+        border: solid 2px $bgcolor
+        margin: 0px 10px
+
+        &.active-course
+            border-color: $accent-dark
+
+@media (max-width: 1160px)
+    .courses-logos
+        flex-wrap: wrap
+        .course-logo
+            max-width: 188px
+
+@media (max-width: 970px)
+
+    .courses-controls
+        display: none
+
+    .course-belt
+        text-align: center
+        width: 100%
+        
+        .course-unit.active-course
+            flex-direction: column
+            position: relative
+            margin-left: 0px
+            left: calc(50% - 370px)
+            margin-bottom: 100px
+            //justify-content: center
+            align-items: center
+            
+  
+            .course-logo-small
+                margin-bottom: 20px
+                margin-top: 20px
+
+            .course-content
+                padding: 0px 30px
+                max-width: 250px
+                margin: 0 auto
+
+    .courses-logos
+        display: none
+
+    .courses-mobile-nav
+        display: block
+

@@ -1,0 +1,46 @@
+.section-contact
+    text-align: center
+
+.social-links
+    max-width: 700px
+    margin: 0 auto 50px
+    display: flex
+    justify-content: space-around
+
+    a  
+        display: block
+        margin: 17px
+        box-sizing: border-box
+        +size(50px)
+        text-align: center
+        line-height: 50px
+        color: #3b5998
+        text-decoration: none
+        font-size: 28px
+        border-radius: 50%
+        background: white
+        transition: all 0.2s ease-in-out
+        &:hover
+            transform: scale(1.2)
+            border: 1px solid #3b5998
+.bar 
+    width: 250px
+    height: 0px
+    border-top: 4px solid $accent-dark
+    margin: 100px auto 100px
+
+.biglink
+    display: inline-block
+    color: $accent-dark
+    font-size: 72px
+    font-weight: 300
+    text-decoration: none
+    margin-bottom: 100px
+
+    &:hover
+        opacity: 0.5
+
+
+@media (max-width: 760px)
+    .biglink
+        font-size: 30px

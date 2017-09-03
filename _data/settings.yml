@@ -1,0 +1,15 @@
+#------------------------------
+# Courses Section
+
+courses:
+- {avatar: 'codecademy-logo-small.png', name: 'Codecademy', title: 'Learn to code interactively, for free.', quote: '<p><strong>Codecademy</a></strong>  is an online interactive platform that offers free coding classes in 12 different programming languages including Python, Java, PHP, JavaScript (jQuery, AngularJS, React.js), Ruby, SQL, and Sass, as well as markup languages HTML and CSS. The site also offers a paid "pro" option that gives users access to a personalized learning plan, quizzes, realistic projects, and live help from advisors. Check it <a href="https://www.codecademy.com/" target="_blank">here!</a></p>', logo: 'codecademy-logo.png'}
+
+- {avatar: 'Treehouse-Logo-small.png', name: 'Treehouse', title: 'Learn Web Design, Coding & Much More', quote: '<p><strong>Treehouse</strong> is an online technology school that offers beginner to advanced courses in web design, web development, mobile development and game development taught by a team of expert teachers. Its courses are aimed at beginners looking to learn coding skills for a career in the tech industry. Check it out <a href="https://teamtreehouse.com/" target="_blank">here!</a></p>', logo: 'treehouse-logo.png'}
+
+- {avatar: 'udacity-logo-small.png', name: 'Udacity', title: 'Education is no longer a one-time event.', quote: '<p><strong>Udacity</strong> is a for-profit educational organization founded by Sebastian Thrun, David Stavens, and Mike Sokolsky offering massive open online courses (MOOCs). Each course consists of several units comprising video lectures with closed captioning, in conjunction with integrated quizzes to help students understand concepts and reinforce ideas, as well as follow-up homework which promotes a "learn by doing" model. Check it out <a href="https://www.udacity.com/" target="_blank">here!</a></p>', logo: 'udacity-logo.png'}
+
+- {avatar: 'udemy-logo-small.jpg', name: 'Udemy', title: 'Be Able.', quote: '<p><strong>Udemy.com</strong> is an online learning platform. It is aimed at professional adults. Unlike academic MOOC programs driven by traditional collegiate coursework, Udemy provides a platform for experts of any kind to create courses which can be offered to the public, either at no charge or for a tuition fee. Udemy provides tools which enable users to create a course, promote it and earn money from student tuition charges. Check it out <a href="https://www.udemy.com/" target="_blank">here!</a></p>', logo: 'udemy-logo.jpg'}
+
+- {avatar: 'CodeSchool-small-logo.png', name: 'CodeSchool', title: 'A pluralsight company.', quote: '<p><strong>Pluralsight</strong> is a privately held online education company that offers a variety of video training courses for software developers, IT administrators, and creative professionals through its website.. Concept is similar to a Treehouse, only this one ofers a lot of free courses. Check it out <a href="https://www.codeschool.com/" target="_blank">here!</a></p>', logo: 'CodeSchool-logo.png'}
+
+
